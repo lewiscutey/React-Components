@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/upload.js"></script>
+    <script>
+        window.onload=function(){
+            var uploadEle=document.querySelector("#upload");
+            var uploadObj=new upload("/users/upload",uploadEle);
+            uploadObj.up();
+        }
+    </script>
+</head>
+<body>
+<form role="form">
+
+    <div class="form-group">
+        <label for="upload">上传</label>
+        <input type="file" class="form-control" id="upload" name="file">
+    </div>
+
+</form>
+</body>
+</html>
